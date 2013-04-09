@@ -229,3 +229,11 @@ footer {
   text-align: justify;
   float: left;
 }
+
+#schools_result {
+  text-align: left;
+}
+#schools_result li:nth-child(1) {
+    font-size: 1.2em;
+    font-weight: bold;
+}

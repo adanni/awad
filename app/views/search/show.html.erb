@@ -1,4 +1,9 @@
 <h1>Search Page</h1>
+<p>You are viewing a map for,
+	<% @place.each do |p| %>
+		<%= p.name %>
+	<% end %>
+</p>
 	<br />
      <div id="pano"></div>
     <input id="address" type="hidden" placeholder="Aberdeen">

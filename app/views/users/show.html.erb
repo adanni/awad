@@ -1,2 +1,11 @@
 <h1><%= "#{@name.upcase}'s Profile" %></h1>
-
+<%#= @schools %>
+<div id="schools_result">
+<% @schools.each do |school| %>
+<ol>
+	<li><%= link_to "#{school.name}", search_path("#{school.postcode}"), {style: "color: blue"} %></li>
+	<li><%= school.address %></li>
+	<li><%= school.school_group %></li>
+</ol>
+<% end %>
+</div>
